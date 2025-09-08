@@ -2,21 +2,21 @@
 
 // 7 types : string, number, Boolean, null, undefined, Symbol, BigInt
 
-const score = 100;
-const scoreValue = 100.3;
+// const score = 100;
+// const scoreValue = 100.3;
 
-const isloggedIn = true;
-const outsideTemp = null;
-let usermail;
+// const isloggedIn = true;
+// const outsideTemp = null;
+// let usermail;
 
 
-const id = Symbol('123')
-const anotherId = Symbol('123')
+// const id = Symbol('123')
+// const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
-const bigNumber = 123456789123456n
-console.log(typeof bigNumber);
+// const bigNumber = 123456789123456n
+// console.log(typeof bigNumber);
 
 
 
@@ -24,23 +24,47 @@ console.log(typeof bigNumber);
 
 // arrays, Objects, functions
 
-const hero = ["Hanuman", "Shaktiman", "Naagraj"] //This is array
+// const hero = ["Hanuman", "Shaktiman", "Naagraj"] //This is array
 
-let myObj ={             // This is Object //
-    name: "Pranay",
-    age: 23,
+// let myObj ={             // This is Object //
+//     name: "Pranay",
+//     age: 23,
+// }
+
+// const myfunction = function(){       // This is function
+//     console.log("Hello World");
+// }
+
+// console.log(typeof hero);  // output is object
+// console.log(hero);
+// console.log(typeof myObj);  // output is object
+// console.log(myObj);
+// console.log(typeof myfunction);   // output is function but also known as object function
+// console.log(myfunction);
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non=Primitive)
+
+let myYTname = "Pannu Creation"
+
+let anothername = myYTname;
+anothername = "Devil"
+
+console.log(myYTname);
+console.log(anothername);
+
+
+let userone = {
+    email: "pranaypawar@gmail.com",
+    upi: "123@ybl"
 }
 
-const myfunction = function(){       // This is function
-    console.log("Hello World");
-}
+let userTwo = userone
 
-console.log(typeof hero);  // output is object
-console.log(hero);
-console.log(typeof myObj);  // output is object
-console.log(myObj);
-console.log(typeof myfunction);   // output is function but also known as object function
-console.log(myfunction);
+userTwo.email = "pp@gmail.com"
 
+console.log(userone);
 
 
