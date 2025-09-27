@@ -47,14 +47,39 @@ const users = [
     }
 ]
 
-console.log(users[1].email)
+// console.log(users[1].email)
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // To access all keys of object but give output in array
+// console.log(Object.keys(tinderUser)); // To access all keys of object but give output in array
 
-console.log(Object.values(tinderUser)); // To access all Values of object but give output in array
+// console.log(Object.values(tinderUser)); // To access all Values of object but give output in array
 
-console.log(Object.entries(tinderUser)); // It creates every key value in array in that array the first property is always key and second property will be value
+// console.log(Object.entries(tinderUser)); // It creates every key value in array in that array the first property is always key and second property will be value
  
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const course ={
+    courseName: "JS Hindi",
+    courseInstructor: "Hitesh",
+    courseFee: 999
+}
+ 
+// console.log(course.courseInstructor)
+
+const {courseInstructor: Instructor} = course
+console.log(Instructor);
+console.log(typeof Instructor);
+console.log(typeof course.courseFee);
+
+// {
+//     "name": "Pranay",
+//     "coursename": "JS in Hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
