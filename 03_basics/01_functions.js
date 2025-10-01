@@ -33,4 +33,35 @@ return `${username} just logged in`
 
 // console.log(loginUserMessage("Pranay")); // here we pass parameter
 
-console.log(loginUserMessage()); // this is empty parameter
+// console.log(loginUserMessage()); // this is empty parameter
+
+function calculateCartPrice(val1, val2, ...num1){   //(...) is here a rest operator it combines all value in array
+    return num1
+}
+
+// console.log(calculateCartPrice(100, 200, 500, 2000));
+
+const user = {
+    username: "Pranay",
+    age:23
+}
+
+function handleUserObject(anyobject){
+    console.log(`Hello my self ${anyobject.username} and I'm ${anyobject.age} years old`);  
+}
+
+//handleUserObject(user)  // here we pass object as aargument
+handleUserObject({
+    username: "Pannu",
+    age:24
+})
+
+const myNewArray = [100, 200, 400, 600]
+
+function handleArray(getarray){
+    return getarray[0]
+}
+
+//console.log(handleArray(myNewArray));  // here we pass array as argument
+
+console.log(handleArray([100, 200]));
